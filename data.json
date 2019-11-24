@@ -1,0 +1,25 @@
+[{
+    "name": "MAGAZINE 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum felis nec dolor congue, non pharetra purus rutrum. Nam nec eros at tellus varius fringilla. Cras et tincidunt tortor, ut venenatis lorem. Suspendisse scelerisque, ex vel tempor pellentesque, urna risus pretium leo, at rhoncus justo lectus vitae odio.",
+    "category": "category 1"
+}, {
+    "name": "MAGAZINE 2",
+    "description": "Maecenas porttitor finibus blandit.",
+    "category": "category 2"
+}, {
+    "name": "MAGAZINE 3",
+    "description": "Vivamus lacinia et nisi et varius.",
+    "category": "category 3"
+}, {
+    "name": "MAGAZINE 4",
+    "description": "Aenean pretium metus leo, sed rhoncus ligula volutpat non.",
+    "category": "category 4"
+}, {
+    "name": "MAGAZINE 5",
+    "description": " Nulla facilisi.",
+    "category": "category 5"
+}, {
+    "name": "MAGAZINE 6",
+    "description": "Vestibulum nec nisl dignissim, aliquet sem a, maximus nulla. Aliquam erat volutpat. Nulla facilisi. Vivamus ut laoreet nibh. Nam sed bibendum augue. Integer congue porttitor tempus.",
+    "category": "category 6"
+}]
