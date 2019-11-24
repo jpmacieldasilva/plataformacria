@@ -2,8 +2,9 @@
        el: '#app',
        beforeMount() {
            //const req = fetch('https://jsonplaceholder.typicode.com/users');
-           //const req = fetch('http://dasilva.life/cria//wp-json/wp/v2/users');
-           const req = fetch('http://blog.plataformacria.com.br/wp-json/wp/v2/users');
+           const req = fetch('http://dasilva.life/cria/wp-json/wp/v2/users');
+           //const req = fetch('https://blog.plataformacria.com.br/wp-json/wp/v2/users', {mode: 'no-cors'});
+           //const req = fetch('http://blog.plataformacria.com.br/wp-json/wp/v2/users');
            // const req = fetch('https://sheetsu.com/apis/v1.0su/f719d217746a');
 
            req.then(response => {
