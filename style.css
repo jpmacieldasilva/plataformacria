@@ -1,4 +1,4 @@
-.my-list-item {
+/*.my-list-item {
     list-style: none;
     transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin: 0px 20px 20px 0px;
@@ -25,3 +25,217 @@ ul {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* comeca aqui */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+
+/* nav-bar */
+.nav-bar {
+    width: 100%;
+    height: 30em;
+    display: flex;
+    background-image: url(images/header-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar p {
+    width: 120px;
+    height: 50px;
+}
+
+.nav-logo {
+    width: 150px;
+}
+
+.nav-bar button {
+    width: 120px;
+    height: 50px;
+    background: #ED3D6E;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+
+.nav-bar-central {
+    width: 40%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    margin-top: -50px;
+    background-color: violet;
+}
+
+.search-bar label input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.seach-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seach-select select {
+    height: 50px;
+    width: 50%;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-color: #ED3D6E;
+    color: white;
+    border-right: white 1px;
+    font-size: 0.8em;
+}
+
+.seach-select select option {
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-color: #ED3D6E;
+    color: white;
+
+}
+
+.seach-select select:first-child {
+    border-right: 0.5px white solid;
+
+}
+
+.content-cards {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.content-card {
+    width: 30%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+.content-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2em;
+}
+
+.card-info-job {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card-info-job p {
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+hr {
+    color: #F2F1F1;
+    height: 5px;
+    width: 80%;
+}
+
+.card-contato i {
+    font-size: 0.8em;
+}
+
+.card-contato i:hover {
+    color: #ED3D6E;
+}
+
+/*
+.card-hover {
+    display: none;
+    background-color: tomato;
+    position: absolute;
+}
+
+.content-card:hover .card-hover {
+    display: block;
+}
+
+.card-bio{
+    width: 300px;
+    height: auto;
+    display: flex;
+}*/
