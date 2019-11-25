@@ -40,6 +40,15 @@ body {
     transition: all .2s;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fas {
+    margin: 3px;
+}
+
 
 /* nav-bar */
 .nav-bar {
@@ -215,14 +224,46 @@ hr {
     width: 80%;
 }
 
-.card-contato i {
-    font-size: 0.8em;
+.card-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card-contato i:hover {
+.card-contato .contato-icon i {
+    font-size: 1em;
+}
+
+.card-contato .contato-icon i:hover {
     color: #ED3D6E;
 }
 
+
+
+.card-bio {
+    font-size: 12px;
+    padding-bottom: 24px;
+    line-height: 1.45;
+    margin-top: 10px;
+}
+
+.card-info button {
+    width: 50px;
+    height: 50px;
+    background: #ED3D6E;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+
+.card-info button i{
+    color: white;
+}
+.card-info button:hover{
+    width: 51px;
+    height: 51px;
+    border-radius: 26px;
+}
 /*
 .card-hover {
     display: none;

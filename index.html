@@ -35,39 +35,57 @@
             </label>
             <div class="seach-select">
                 <select v-model="select">
+                    <option value="">Escolha uma cidade</option>
                     <option v-for="(cidade, index) in cidades" :key="index" :value="cidade">{{cidade}}</option>
-                    <option value="">Escolha uma cidade <img src="images/chevron-down-solid.svg" alt="" srcset="">
-                    </option>
                 </select>
-                <select v-model="select">
-                    <option v-for="(cidade, index) in cidades" :key="index" :value="cidade">{{cidade}}</option>
+                <select v-model="select2">
                     <option value="">Escolha uma área criativa</option>
+                    <option v-for="(area, index) in areas" :key="index" :value="area">{{area}}</option>
+
                 </select>
             </div>
         </div>
 
         <div class="content-cards grid">
             <div v-for='item in filteredList' :key='item.id' class="content-card">
-                <img src="images/header-image.png" alt=""></img>
+                <img :src="item.image" alt="item.name" v-show="item.image.length"></img>
+                <img src="images/template-image.png" v-show="!item.image.length"></img>
                 <div class="card-info">
                     <h3 class="card-title"> {{item.name}} </h3>
                     <div class="card-info-job">
                         <p class="card-text"> <i class="fas fa-briefcase"></i> {{item.job}} </p>
                         <p class="card-text"> <i class="fas fa-map-pin"></i> {{item.city}} </p>
                     </div>
-                    <hr>
-                    <div class="card-contato">
-                        <a class="card-text" v-show="item.portfolio.length"> <i class="fas fa-link"></i></i> </a>
-                        <a class="card-text" v-show="item.facebook.length"> <i class="fab fa-facebook"></i></a>
-                        <a class="card-text" v-show="item.twitter.length"> <i class="fab fa-twitter"></i></i></a>
-                        <a href:class="card-text" v-show="item.instagram.length"> <i class="fab fa-instagram"></i></a>
-                    </div>
+                    <p class="card-text card-bio" id="clamp-text"> {{item.description}}
+                        <hr>
+                        <div class="card-contato">
+                            <div class="contato-icon">
+                                <a :href="item.portfolio" class="card-text" v-show="item.portfolio.length"> <i
+                                        class="fas fa-link"></i></i> </a>
+                                <a :href=" 'https://www.facebook.com/' + item.facebook" class="card-text" v-show="item.facebook.length"> <i
+                                        class="fab fa-facebook"></i></a>
+                                <a :href=" 'https://www.twitter.com/' + item.twitter" class="card-text" v-show="item.twitter.length"> <i
+                                        class="fab fa-twitter"></i></i></a>
+                                <a :href=" 'https://www.instagram.com/' + item.instagram" class="card-text" v-show="item.instagram.length"> <i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                            <button><a :href=" 'mailto:' + item.email"><i class="fas fa-envelope"></i></a></button>
+                        </div>
+
                 </div>
 
             </div>
         </div>
     </div>
     </div>
+    <script src="js/clamp.min.js"></script>
+    <script>
+        var module = document.getElementById("clamp-text");
+
+        $clamp(module, {
+            clamp: 15
+        });
+    </script>
     <script src="app.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- Compiled and minified JavaScript -->
