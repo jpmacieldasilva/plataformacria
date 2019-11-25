@@ -238,8 +238,6 @@ hr {
     color: #ED3D6E;
 }
 
-
-
 .card-bio {
     font-size: 12px;
     padding-bottom: 24px;
@@ -290,3 +288,33 @@ hr {
     height: auto;
     display: flex;
 }*/
+
+  
+  /* Transparent Overlay */
+  .loading {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 20px;
+    line-height: 1.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ED3D6E;
+    opacity: 1;
+    color: white;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .loading{
+        display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .content-card {
+        width: 45%;}
+  }
