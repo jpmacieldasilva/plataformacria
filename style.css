@@ -245,6 +245,8 @@ hr {
     padding-bottom: 24px;
     line-height: 1.45;
     margin-top: 10px;
+    overflow: auto;
+    max-height: 150px;
 }
 
 .card-info button {
@@ -263,6 +265,14 @@ hr {
     width: 51px;
     height: 51px;
     border-radius: 26px;
+}
+
+.texto-erro{
+    font-size: 1.4em;
+    line-height: 1.5;
+    text-align: center;
+    height: 400px;
+    margin-top: 60px;
 }
 /*
 .card-hover {

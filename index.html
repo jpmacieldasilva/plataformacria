@@ -21,9 +21,9 @@
     <nav class="nav-bar">
         <p></p>
         <div class="nav-bar-central">
-            <a href="http://">websérie</a>
-            <a href="http://"><img class="nav-logo" src="images/logo-beta.png" alt=""></a>
-            <a href="http://">sobre</a>
+            <a href="">websérie</a>
+            <a href=""><img class="nav-logo" src="images/logo-beta.png" alt=""></a>
+            <a href="">sobre</a>
         </div>
         <button>Faça parte</button>
     </nav>
@@ -41,7 +41,6 @@
                 <select v-model="select2">
                     <option value="">Escolha uma área criativa</option>
                     <option v-for="(area, index) in areas" :key="index" :value="area">{{area}}</option>
-
                 </select>
             </div>
         </div>
@@ -73,19 +72,14 @@
                         </div>
 
                 </div>
-
             </div>
+            <p class="texto-erro" v-show="!filteredList.length">Poxa :( Nenhum resultado encontrado! <br> Divulgue a platarforma para seus amigos e vamos encontrar mais criativxs!</p>
+
         </div>
     </div>
     </div>
     <script src="js/clamp.min.js"></script>
-    <script>
-        var module = document.getElementById("clamp-text");
-
-        $clamp(module, {
-            clamp: 15
-        });
-    </script>
+  
     <script src="app.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- Compiled and minified JavaScript -->
