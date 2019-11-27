@@ -1,33 +1,3 @@
-/*.my-list-item {
-    list-style: none;
-    transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    margin: 0px 20px 20px 0px;
-    border: 1px solid red;
-    width: 100px;
-    height: 50px;
-    word-wrap: break-word;
-    text-align: center;
-    overflow: hidden;
-}
-
-.my-list-enter, .my-list-leave-to {
-    transform: translateY(200px);
-    opacity: 0;
-}
-
-.my-list-leave-active {
-    position: absolute;
-}
-
-ul {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* comeca aqui */
-
 body {
     font-family: 'Montserrat', sans-serif;
 }

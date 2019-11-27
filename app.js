@@ -3,10 +3,11 @@
        beforeMount() {
            //const req = fetch('https://jsonplaceholder.typicode.com/users');
            //const req = fetch('http://dasilva.life/cria/wp-json/wp/v2/users');
-           const req = fetch('https://api.myjson.com/bins/1b1faq');
-           //const req = fetch('https://api.myjson.com/bins/14ra3e/');
-           //const req = fetch('https://blog.plataformacria.com.br/wp-json/wp/v2/users', {mode: 'no-cors'});
+           //const req = fetch('https://api.myjson.com/bins/1b1faq');
+           const req = fetch('https://plataformacria-3c64c.firebaseio.com/users.json');
            //const req = fetch('http://blog.plataformacria.com.br/wp-json/wp/v2/users');
+
+           
 
            req.then(response => {
                    if (response.ok) {
@@ -15,8 +16,11 @@
                    throw new Error('Bad request: ' + response.status);
                })
                .then(users => {
-                   this.users = users;
+                   
                    this.nextId = this.users.length + 1;
+                  users = Object.keys(users).map(key => users[key]);
+                  console.log(users)
+                  this.users = users;
                });
        },
        data: {
