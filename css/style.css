@@ -272,12 +272,16 @@ hr {
     line-height: 1.5;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
     background-color: #ED3D6E;
     opacity: 1;
     color: white;
     text-align: center;
+  }
+
+  .loading img{
+      max-width: 80%;
   }
   
   @media only screen and (max-width: 600px) {
