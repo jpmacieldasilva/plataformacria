@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/1c815cfb24.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
@@ -18,7 +17,12 @@
 </head>
 
 <body>
-    <div class="loading"><p class="">Eita, geovana! Estamos melhorando versão mobile para uma melhor experiência. Explore nossa plataforma usando um compiuter.</p></div>
+    <div class="loading">
+        <img src="https://i.imgur.com/nXoliun.gif" alt="" srcset="">
+        <p><a href="https://giphy.com/gifs/8xgqLTTgWqHWU">via GIPHY</a></p>
+        <p class="">Eita, geovana! Estamos melhorando versão mobile para uma melhor experiência. Explore nossa
+            plataforma usando um compiuter.</p>
+    </div>
     <nav class="nav-bar">
         <p></p>
         <div class="nav-bar-central">
@@ -62,24 +66,24 @@
                             <div class="contato-icon">
                                 <a :href="item.portfolio" class="card-text" v-show="item.portfolio.length"> <i
                                         class="fas fa-link"></i></i> </a>
-                                <a :href=" 'https://www.facebook.com/' + item.facebook" class="card-text" v-show="item.facebook.length"> <i
-                                        class="fab fa-facebook"></i></a>
-                                <a :href=" 'https://www.twitter.com/' + item.twitter" class="card-text" v-show="item.twitter.length"> <i
-                                        class="fab fa-twitter"></i></i></a>
-                                <a :href=" 'https://www.instagram.com/' + item.instagram" class="card-text" v-show="item.instagram.length"> <i
-                                        class="fab fa-instagram"></i></a>
+                                <a :href=" 'https://www.facebook.com/' + item.facebook" class="card-text"
+                                    v-show="item.facebook.length"> <i class="fab fa-facebook"></i></a>
+                                <a :href=" 'https://www.twitter.com/' + item.twitter" class="card-text"
+                                    v-show="item.twitter.length"> <i class="fab fa-twitter"></i></i></a>
+                                <a :href=" 'https://www.instagram.com/' + item.instagram" class="card-text"
+                                    v-show="item.instagram.length"> <i class="fab fa-instagram"></i></a>
                             </div>
                             <button><a :href=" 'mailto:' + item.email"><i class="fas fa-envelope"></i></a></button>
                         </div>
 
                 </div>
             </div>
-            <p class="texto-erro" v-show="!filteredList.length">Poxa :( Nenhum resultado encontrado! <br> Divulgue a platarforma para seus amigos e vamos encontrar mais criativxs!</p>
-
+            <p class="texto-erro" v-show="!filteredList.length">Poxa :( Nenhum resultado encontrado! <br> Divulgue a
+                platarforma para seus amigos e vamos encontrar mais criativxs!</p>
         </div>
     </div>
-    </div>  
-    <script src="app.js"></script>
+    </div>
+    <script src="js/app.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
