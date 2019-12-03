@@ -15,6 +15,11 @@ a {
     color: black;
 }
 
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
 .fas {
     margin: 3px;
 }
@@ -32,6 +37,10 @@ a {
     justify-content: space-between;
     padding: 20px;
 
+}
+
+.nav-bar__thin {
+    height: 20em;
 }
 
 .nav-bar a {
@@ -216,7 +225,7 @@ hr {
     line-height: 1.5;
     margin-top: 10px;
     overflow: auto;
-    max-height: 150px;
+    max-height: 80px;
 }
 
 .card-info button {
@@ -299,6 +308,8 @@ hr {
         flex-direction: column;
         align-content: center;
     }
+
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -306,3 +317,160 @@ hr {
         width: 45%;
     }
 }
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #152A46;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 0 2em;
+
+}
+
+.footer__logo {
+    width: 33%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo img {
+    width: 350px;
+    height: auto;
+}
+
+.footer__menu {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__links a {
+    color: #fff;
+    font-size: 1em;
+    width: 100%;
+}
+
+.footer__menu p {
+    width: 70%;
+    color: #fff;
+    font-size: 1.6em;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    margin-left: -80px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.footer__form {
+    width: 33%;
+
+}
+.form__fields {
+    display: flex;
+    width: 100%;
+    margin-top: 0.8em;
+}
+
+.mc-field-group{
+    width: 60%;
+}
+
+
+.form__fields [type=email]{
+    height: 35px;
+    width: 100%;
+} 
+
+.form__fields [type=submit] {
+    background-color: #ED3D6E;
+    height: 35px;
+    border: none;
+    color: #fff;
+}
+
+/*REGISTER*/
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-fluid form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80%;
+    background-color: rgb(133, 107, 107);
+    width: 100%;
+    max-width: 700px;
+    padding: 1.3em;
+    align-content: center;
+    justify-content: center;
+}
+
+form .form-control {
+    width: 100%;
+
+}
+
+.social {
+    display: flex;
+
+}
+
+.social-field {
+    width: 30%;
+    margin: 5px;
+}
+
+.image-field {
+    display: none;
+}
+
+.btn-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 150;
+
+}
+
+.about__content {
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about__content p {
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    width: 600px;
+    margin: 5px;
+}
+
+.about__content p a {
+    color: #fff;
+}
+

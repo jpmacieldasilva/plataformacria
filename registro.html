@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+
+
+    <!-- Title Page-->
+    <title>Faça parte da nossa rede criativa</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-01 p-t-30 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Faça parte da comunidade criativa!</h2>
+                    <form method="POST" id="contactForm">
+                        <input class="custom-file-input" type="file" name="" accept=".jpg,.png" class="btn-circle"
+                            id="fileButton" type="submit">
+                        <div class="image-field">
+                            <p class="image-field">
+                                <input type="text" class="form-control" name="image" id="image">
+                            </p>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Como gostaria de ser chamado?"
+                                name="name" id="name" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email" id="email" required>
+                        </div>
+                        <div class="input-group--text">
+                            <textarea name="message" class="input--style-3" rows="3" maxlength="200" id="bio"
+                                placeholder="Fale o pouco sobre você e seu trabalho" required></textarea>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="gender" id="cidade">
+                                    <option disabled="disabled" selected="selected">Cidade</option>
+                                    <option>Águas Claras</option>
+                                    <option>Arniqueiras</option>
+                                    <option>Brasília</option>
+                                    <option>Brazlândia</option>
+                                    <option>Ceilândia</option>
+                                    <option>Cruzeiro</option>
+                                    <option>Fercal</option>
+                                    <option>Gama</option>
+                                    <option>Guará</option>
+                                    <option>Itapoã</option>
+                                    <option>Jardim Botânico</option>
+                                    <option>Lago Norte</option>
+                                    <option>Lago Sul</option>
+                                    <option>Núcleo Bandeirante</option>
+                                    <option>Paranoá</option>
+                                    <option>Park Way</option>
+                                    <option>Planaltina</option>
+                                    <option>Recanto das Emas</option>
+                                    <option>Riacho Fundo</option>
+                                    <option>Riacho Fundo II</option>
+                                    <option>Samambaia</option>
+                                    <option>Santa Maria</option>
+                                    <option>São Sebastião</option>
+                                    <option>SCIA/Estrutural</option>
+                                    <option>SIA</option>
+                                    <option>Sobradinho</option>
+                                    <option>Sobradinho II</option>
+                                    <option>Sudoeste/Octogonal</option>
+                                    <option>Taguatinga</option>
+                                    <option>Varjão</option>
+                                    <option>Vicente Pires</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Link para seu trabalho"
+                                name="portfolio" id="portfolio">
+                        </div>
+                        <div class="input-group">
+                            <label for="Facebook">Facebook</label>
+                            <input class="input--style-4" type="text" placeholder="facebook.com/" name="facebook"
+                                id="facebook">
+                        </div>
+                        <div class="input-group">
+                            <label for="Facebook">Instagram</label>
+                            <input class="input--style-4" type="text" placeholder="usuário sem o @" name="instagram"
+                                id="instagram">
+                        </div>
+                        <div class="input-group">
+                            <label for="Facebook">Twitter</label>
+                            <input class="input--style-4" type="text" placeholder="usuário sem o @" name="twitter"
+                                id="twitter">
+                        </div>
+                        <div class="p-t-10">
+                            <button class="btn btn--pill btn--pink" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="js/newRegister.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+</body>
+
+</html>

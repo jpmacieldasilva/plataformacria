@@ -1,7 +1,8 @@
    const app = new Vue({
        el: '#app',
        beforeMount() {
-           const req = fetch('https://api.myjson.com/bins/1b1faq');
+           /* const req = fetch('https://api.myjson.com/bins/1b1faq'); */
+           const req = fetch('https://plataformacria-3c64c.firebaseio.com/users.json');
            req.then(response => {
                    if (response.ok) {
                        return response.json();
@@ -9,8 +10,9 @@
                    throw new Error('Bad request: ' + response.status);
                })
                .then(users => {
-                   this.users = users;
                    this.nextId = this.users.length + 1;
+                   users = Object.keys(users).map(key => users[key]);
+                   this.users = users;
                });
        },
        data: {
